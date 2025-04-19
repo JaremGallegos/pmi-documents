@@ -1,0 +1,28 @@
+{
+  "build_id": "46d9f4825eef70de52a88d491ec71ffeadd2ddcc",
+  "files": {
+    "main.js": [
+      "chunk-GKQZINLP.js",
+      "chunk-7KZRW4CE.js"
+    ],
+    "deserializer.js": [],
+    "signals.js": [
+      "chunk-5TIVV7D3.js",
+      "chunk-7KZRW4CE.js"
+    ],
+    "island-counter.js": [
+      "chunk-GKQZINLP.js",
+      "chunk-5TIVV7D3.js",
+      "chunk-7KZRW4CE.js"
+    ],
+    "chunk-GKQZINLP.js": [],
+    "chunk-5TIVV7D3.js": [
+      "chunk-7KZRW4CE.js"
+    ],
+    "plugin-twind-main.js": [
+      "chunk-7KZRW4CE.js"
+    ],
+    "chunk-7KZRW4CE.js": [],
+    "metafile.json": []
+  }
+}
