@@ -1,0 +1,44 @@
+{
+  "name": "sd-pmi-documents",
+  "version": "1.0.0",
+  "description": "A simple web page PMI documents",
+  "main": "index.js",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@tbranyen/jsdom": "^13.0.0",
+    "concurrently": "^9.1.2",
+    "html-minifier": "^4.0.0",
+    "image-size": "^2.0.2",
+    "json-to-scss": "^1.6.2",
+    "sass": "^1.86.3",
+    "semver": "^7.7.1",
+    "slugify": "^1.6.6",
+    "stalfos": "github:hankchizljaw/stalfos#c8971d22726326cfc04089b2da4d51eeb1ebb0eb"
+  },
+  "devDependencies": {
+    "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
+    "bl": "^6.1.0",
+    "chokidar-cli": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "make-dir-cli": "^4.0.0",
+    "prettier": "^3.5.3",
+    "rollup": "^4.40.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run sass:process -- --watch\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"src/_includes/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
+    "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JaremGallegos/SD-PMI-Documents"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
